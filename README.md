@@ -1,6 +1,6 @@
 # allmon3-nologin
 
-Two scripts to patch an installed Allmon3 (AllStarLink monitoring dashboard) so it always reports "Logged In" and skips its auth/restriction gate on command execution — for nodes where the login prompt is unwanted (e.g. LAN-only or otherwise access-controlled deployments).
+Two scripts for an installed Allmon3 (AllStarLink monitoring dashboard): `patch_always_logged_in.sh` puts it into a permanently logged-in state, always reporting "Logged In" and skipping its auth/restriction gate on command execution; `unpatch_always_logged_in.sh` reverses that, restoring the original login behavior. Useful for nodes where the login prompt is unwanted (e.g. LAN-only or otherwise access-controlled deployments).
 
 Run both as root on the ASL node itself, not on a dev machine.
 
